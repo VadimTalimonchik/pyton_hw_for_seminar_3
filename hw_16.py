@@ -7,16 +7,16 @@
 # 3
 # -> 1
 
-n = int(input('Введите длину массива N: '))
+n = int(input('Введите количество элементов в массиве: '))
 print()
 
 list_1 = list()
 for i in range(n):
-    ai = int(input('Введите число Ai: '))
+    ai = int(input('Введите число: '))
     list_1.append(ai)
 print()
 
-x = int(input('Введите число X: '))
+x = int(input('Введите искомое число в массиве: '))
 print()
 
 print('Число', x, 'встречается в массиве', list_1.count(x), 'раз(а).')
