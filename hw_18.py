@@ -7,14 +7,23 @@
 # 6
 # -> 5
 
-n = int(input('Введите длину массива N: '))
+n = int(input('Введите количество элементов в массиве: '))
 print()
 
-list_1 = list()
+array = list()
 for i in range(n):
-    ai = int(input('Введите число Ai: '))
-    list_1.append(ai)
+    ai = int(input('Введите число: '))
+    array.append(ai)
 print()
 
-x = int(input('Введите число X: '))
+x = int(input('Введите число для поиска: '))
+print()
+
+m = abs(x - array[0])
+num = array[0]
+for i in range(1, len(array)):
+    if m > abs(array[i] - x):
+        m = abs(array[i] - x)
+        num = array[i]
+print('Ближайшее к', x, 'значение:', num,'.')
 print()
